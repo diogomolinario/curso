@@ -1,0 +1,9 @@
+umask 000
+chmod 777 $1*
+export COBPATH=$PWD/books:$PWD/cbl:$PWD/dados:$PWD/telas:$COBPATH
+export COBIDY=$PWD/books:$PWD/cbl:$PWD/dados:$PWD/telas:$COBIDY
+export COBCPY=$PWD/books:$PWD/cbl:$PWD/dados:$PWD/telas:$COBCPY
+cob -V -g $1.cbl
+if [ $? -eq 0 ]; then
+   cobrun $PWD/$1.int
+fi
