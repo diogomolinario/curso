@@ -1,8 +1,0 @@
-export COBDIR=/opt/cobol5/microfocus/cobol
-export LD_LIBRARY_PATH=/opt/cobol5/microfocus/cobol/lib
-export PATH=/opt/cobol5/microfocus/cobol/bin:$PATH
-export SYSTERM=/opt/cobol5/microfocus/cobol/terminfo/l
-export TERM=linux
-mftic $COBDIR/terminfo/mfdebug.src
-screens $1
-
