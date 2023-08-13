@@ -65,7 +65,7 @@
              03 tb-descricao           pic x(020).
              03 tb-dtTeste             pic x(010).
        01 tab-lin                      pic x(032)  value
-          "06070809101112131415161718192021"          
+           "06070809101112131415161718192021".
        01 redefines tab-lin.
           02 tb-lin                    pic 9(002)  occurs 16. 
           
